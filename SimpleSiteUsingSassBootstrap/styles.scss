@@ -1,0 +1,203 @@
+$red: #ff8080;
+$gray: #e6e6ff;
+$white: #fff;
+$dark: #4d4d4d;
+$grayDark: #918989;
+$redStrong: #da1717;
+$marginValue: 27%;
+
+.textWhite{
+    color: $white;
+    font-size: 1em;
+}
+.bgColorWhite {
+    background-color: $white !important;
+}
+.bgColorRed {
+    background-color: $red;
+}
+.bgColorGray {
+    background-color: $gray;
+}
+.bgColorDark {
+    background-color: $dark;
+}
+.margins{
+    margin: auto $marginValue auto $marginValue;
+}
+.noPadding{
+    padding: 0px !important;
+}
+
+.textStylesNavbar{font-size: 0.90em; margin-left:15px;}
+
+.navbarHoverLineUnder a:hover { border-bottom:3px solid $white; }
+.navbarHoverLineUnder a { border-bottom:3px solid transparent;}
+
+.logoButtonStylesText {font-family: 'MyWebFont'; font-size: 2.5em;}
+
+.logoButtonStylesHover a:hover {color: $white !important; text-decoration: none;}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.buttonStylesHover a:hover {
+    color:$white;
+}
+
+.firstDivH1{color: $white;}
+.firstDivText{color: $white; font-size: 1.5em; opacity:0.6;}
+.firstDivControl{
+    padding-bottom: 2.5%;
+  
+}
+.secondDivControl{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.thirdDivControl{
+    padding-top: 7.5%;
+    padding-bottom: 5%;
+}
+.fourthDivControl{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.fifthDivControl{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.paddingTop{
+    margin-top:5%;
+    padding-top: 30%;
+}
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('billabong-webfont.eot'); /* IE9 Compat Modes */
+    src: url('billabong-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('billabong-webfont.woff') format('woff'), /* Modern Browsers */
+         url('billabong-webfront.woff') format('woff2'),
+         url('billabong-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('billabong-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  .btn-app-store {
+    background: black;
+    color: white;
+    height: 45px;
+    width: 255px;
+    border-radius: 25px;
+  }
+  
+  .btn-app-store i {
+    font-size: 20px;
+    padding: 2.5%;
+  }
+  
+ 
+  .appStoreButtonText{
+      font-size: 15px;  
+      margin-left: 3.5px;
+  }
+
+  #firstDivPhotoBackground {
+	background: linear-gradient(to bottom, rgba(221, 107, 107, 0.80) 100%, transparent), url(/imgForBackgroundOnSiteTest.jpg);
+	background-size: cover, cover;
+	background-position: center, center;
+	justify-content: center;
+	align-items: center;
+}
+
+#thirdDivPhotoBackground {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 100%, transparent), url(/stupidClown.jpg);
+	background-size: cover, cover;
+	background-position: center, center;
+	justify-content: center;
+	align-items: center;
+}
+
+.textCentered{
+    text-align:center;
+}
+.textColorSecondDiv{
+    color: $grayDark;
+
+}
+.textColorThirdDiv1{
+    color: $redStrong;
+}
+.textColorThirdDiv2{
+    color: $white;
+}
+.buttonClass{
+    border-radius:25px !important;
+
+}
+  @media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+    .imgResize {
+        position:absolute;
+        bottom:5%;
+        width:auto;
+        height:70%;
+        
+    }
+    .positionRelative{
+        position:relative;
+    }
+    .imgResizeSmall {
+       // position:absolute;
+       width:100px;
+        left: 25%;
+        height:100px;
+        border-radius: 50%;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .imgResizeSmall {
+       // position:absolute;
+        width:100px;
+        left: 25%;
+        height:100px;
+       border-radius: 50%;
+
+    }
+    .positionRelative{
+        position:relative;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $red;
+  }
+
+  .carousel-indicators .active {
+    
+    background-color: $redStrong;
+  }
+
+  
+
+// << if transparent navbar is required << only for fixed navbar >> >>
+// .navbar.transparent.navbar-inverse .navbar-inner {
+//     border-width: 0px;
+//     -webkit-box-shadow: 0px 0px;
+//     box-shadow: 0px 0px;
+//     background-color: rgba(0,0,0,0.0);
+//     background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+//     background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+//     background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+// }
